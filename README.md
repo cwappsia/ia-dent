@@ -28,8 +28,20 @@ npm run dev
 
 | Variável | Onde achar |
 |---|---|
-| `VITE_SUPABASE_URL` | Settings → API do projeto Supabase |
-| `VITE_SUPABASE_ANON_KEY` | Settings → API → publishable key |
+| `SUPABASE_URL` | Settings → API do projeto Supabase |
+| `SUPABASE_ANON_KEY` | Settings → API → publishable key |
+
+## Deploy na Vercel
+
+1. [vercel.com/new](https://vercel.com/new) → importe o repo `cwappsia/IA.Dent` (framework Vite é detectado sozinho)
+2. Em **Environment Variables**, adicione:
+
+| Variável | Valor |
+|---|---|
+| `SUPABASE_URL` | `https://ysjtycgahiuyfdcseskg.supabase.co` |
+| `SUPABASE_ANON_KEY` | a publishable key do projeto (Supabase → Settings → API — a mesma do `.env.local`) |
+
+3. Deploy. Push na `main` publica sozinho daí em diante.
 
 ## Banco
 
